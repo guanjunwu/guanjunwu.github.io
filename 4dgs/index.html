@@ -76,8 +76,9 @@
           <a class="navbar-item" href="https://jumpat.github.io/SA3D/">
             Segment Anything in 3D with NeRFs
           </a>
-           
-
+          <a class="navbar-item" href="https://taoranyi.com/gaussiandreamer/">
+            GaussianDreamer
+          </a>
           <!--
           <a class="navbar-item" href="https://github.com/graphdeco-inria/gaussian-splatting">
             3D gaussian-splatting
@@ -126,7 +127,7 @@
               <a href="https://www.qitian1987.com/">Tian Qi</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://xwcv.github.io/">Xinggang Wang</a><sup>1+</sup>,
+              <a href="https://xwcv.github.io/">Xinggang Wang</a><sup>1+</sup>
             </span>
           </div>
 
@@ -142,24 +143,24 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
-              </span> -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2310.08528"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span> -->
+              </span>
               <!-- Video Link. -->
               <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
@@ -197,7 +198,42 @@
     </div>
   </div>
 </section>
-
+<h2 class="subtitle has-text-centered">
+  <span class="dnerf">4D-GS </span>can learn a scene within 20 minutes and reach the rendering speed over 50 fps on RTX 3080.
+</h2>
+<div class="columns is-centered">
+  <!-- <p>
+    As a byproduct of our method, we can also solve the matting problem by ignoring
+    samples that fall outside of a bounding box during rendering.
+  </p> -->
+  <!-- Visual Effects. -->
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+        <source src="./static/videos/teaser_chicken.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+        <source src="./static/videos/teaser_beef.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="column">
+    <div class="columns is-centered">
+      <div class="content">
+        <video id="dollyzoom"  autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/teaser_cookie.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -206,9 +242,7 @@
         <source src="./static/videos/train_visualize.mp4"
                 type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">4D-GS </span>can learn a scene within 20 minutes and reach the rendering speed over 50 fps on RTX 3080.
-      </h2>
+
     </div>
   </div>
 </section>
@@ -252,39 +286,7 @@
     <!--/ Paper video. -->
   </div>
 </section>
-<div class="columns is-centered">
-  <!-- <p>
-    As a byproduct of our method, we can also solve the matting problem by ignoring
-    samples that fall outside of a bounding box during rendering.
-  </p> -->
-  <!-- Visual Effects. -->
-  <div class="column">
-    <div class="content">
-      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-        <source src="./static/videos/teaser_chicken.mp4"
-                type="video/mp4">
-      </video>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-      <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-        <source src="./static/videos/teaser_beef.mp4"
-                type="video/mp4">
-      </video>
-    </div>
-  </div>
-  <div class="column">
-    <div class="columns is-centered">
-      <div class="content">
-        <video id="dollyzoom"  autoplay controls muted loop playsinline height="100%">
-          <source src="./static/videos/teaser_cookie.mp4"
-                  type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 
 <section class="hero is-light is-small">
@@ -350,7 +352,7 @@
   
 
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <h2 class="title is-3">D-NeRF Datasets</h2>
       <div id="results-carousel" class="carousel results-carousel">
 
@@ -585,7 +587,7 @@
 </section>
 
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
@@ -595,16 +597,26 @@
   year      = {2021},
 }</code></pre>
   </div>
-</section> --> 
+</section>   -->
 
-
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{wu20234dgaussians,
+      title={4D Gaussian Splatting for Real-Time Dynamic Scene Rendering},
+      author={Wu, Guanjun and Yi, Taoran and Fang, Jiemin and Xie, Lingxi and Zhang, Xiaopeng and Wei Wei and Liu, Wenyu and Tian, Qi and Wang Xinggang},
+      journal={arXiv preprint arXiv:2310.08528},
+      year={2023}
+    }</code></pre>
+  </div>
+</section>
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <!-- <a class="icon-link" -->
-         <!-- href="./static/videos/nerfies_paper.pdf"> -->
-        <!-- <i class="fas fa-file-pdf"></i> -->
-      <!-- </a> -->
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2310.08528">
+        <i class="fas fa-file-pdf"></i>
+      </a>
       <a class="icon-link" href="https://github.com/guanjunwu" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
