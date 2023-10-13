@@ -111,13 +111,14 @@ body {
 }
 
 .results-carousel {
+  background:#ffffff;
   overflow: hidden;
 }
 
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
-  border: 1px solid #bbb;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   padding: 0;
   font-size: 0;
@@ -129,7 +130,7 @@ body {
 
 
 .interpolation-panel {
-  background: #f5f5f5;
+  background: #ffffff;
   border-radius: 10px;
 }
 
