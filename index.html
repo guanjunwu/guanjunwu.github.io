@@ -1,182 +1,332 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+  <head>
+  <meta name="google-site-verification" content="xDNWUvx6Q5EWK5YYSyKvK8DZTmvXhKsGX203Ll-BFFE" >	
+  <meta name=viewport content=“width=800”>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300);
+  /* @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons); */
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    /*color: #b60a1c;*/
+    color: #1772d0;
+    /*color: #bd0a36;*/
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    }
+    strong {
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+    /*font-family: 'Avenir Next';*/
+    font-size: 15px;
+    font-weight: 400;
+    }
+    heading {
+    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Avenir Next';*/
+    /*src: url("./fonts/Roboto_Mono_for_Powerline.ttf");*/
+    font-size: 24px;
+    font-weight: 400;
+    }
+    papertitle {
+    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Avenir Next';*/
+    /*src: url("./fonts/Roboto_Mono_for_Powerline.ttf");*/
+    font-size: 15px;
+    font-weight:500;
+    }
+    name {
+    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Avenir Next';*/
+    font-weight: 400;
+    font-size: 32px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 140px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+    br {
+            display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 5; /* change this to whatever height you want it */
+    }
+  </style>
+  <!-- <link rel="icon" type="image/png" href="media/preview.jpg"> -->
+  <title>Guanjun Wu - Homepage</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <script src="script/functions.js"></script>
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-    <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Guanjun Wu (吴官骏)'s Homepage</title>
+  <body><table width="800" border="0" align="center" cellspacing="0" cellpadding="0"><tr><td>
+  <!-- Biography -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+    <td width="67%" valign="middle">
+      <p align="center">
+        <name>Guanjun Wu (吴官骏)</name>
+      </p>
+      <p>
+        I am a first-year PhD. student of Huazhong University of Science and Technology, School of computer Science and Technology. I got my bachelor degree from HUST in 2023. Under the supervised of<a href="http://creativecommons.org/licenses/by-sa/4.0/"> Prof. Xinggang Wang</a>, <a href="http://creativecommons.org/licenses/by-sa/4.0/">Prof. Wenyu Liu</a> and with the guidance of <a href=https://jaminfong.cn/>Dr. Jiemin Fang</a>
+        in the School of Electronic Information and Communications, I am enjoying my PhD career in collaboration with HuaWei during my persuit of degree. My research interests mainly focus on computer vision, with a specific focus on Neural Rendering.
+          </p>
+      <p align=center>
+        <a href="mailto:guajuwu@hust.edu.cn">Email</a> &nbsp;|&nbsp;
+        <a href="https://scholar.google.com/citations?hl=zh-CN&user=2OrWci8AAAAJ">Google Scholar</a> &nbsp;|&nbsp;
+        <a href="https://github.com/guanjunwu/">GitHub</a>
+      </p>
+    </td>
+    <td width="33%">
+      <img src="static/images/myphoto.png" width="150" alt="headshot">
+    </td>
+  </tr>
+  </table>
 
+  <!-- Logo -->
+  <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+    <td width="10%" valign="middle">
+      <a href="https://ethz.ch/en.html"><img src="media/eth_logo.png" width="120"></a>
+    </td>
+  </tr>
+  </table> -->
+  
+  <!-- News -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
+    <td>
+      <heading>News</heading>
+        <ul>
+          <li><strong>10/2023</strong><a href="./index.html"> Fast High Dynamic Range Radiance Field for Dynamic Scenes </a> is accpeted to 3DV 2024!. </li>
+        </ul>
+    </td>
+  </tr>
+  </table>
+
+  <!-- Publications -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+      <td colspan="2">
+        <heading>Research</heading> 
+        <p>
+            My research interests are efficient neural rendering technology, including: HDR neural radiance fields, dynamic and static scene reconstruction, 3D Generation, etc.
+          </p>
+          <p></p>
+        * indicates equal contribution
+      </td>
+    </tr>
+
+    <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">  
+        <td width="25%">
+          <div class="one">
+          <!-- <div class="two" id = 'openscene_shape'>
+          <video  width="160" height="100" muted autoplay loop>
+              <source src="media/openscene_teaser.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video></div> -->
+          <img src='media/4dgs.gif' width="180" height="120"></div>
+          <script type="text/javascript">
+          function openscene_start() { 
+          document.getElementById('openscene_shape').style.opacity = "1";
+          }
+          function openscene_stop() { 
+          document.getElementById('openscene_shape').style.opacity = "0"; 
+          }
+          openscene_stop()
+          </script>
+        </td>
+        <td valign="top" width="75%">
+          <papertitle>
+            4D Gaussian Splatting for Real-Time Dynamic Scene Rendering
+          </papertitle>
+          <br>
+          <strong>Guanjun Wu*</strong>,
+          <a href="https://taoranyi.com/">Taoran Yi*</a>, 
+
+          <a href="https://jaminfong.cn/">Jiemin Fang</a>, 
+          
+          <a href="http://lingxixie.com/">Lingxi Xie</a>, 
+          <a href="https://scholar.google.com/citations?user=Ud6aBAcAAAAJ&hl=zh-CN">Xiaopeng Zhang</a>, 
+          <a href="https://www.eric-weiwei.com/">Wei Wei</a>,  
+          <a href="http://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,  
+          <a href="https://www.qitian1987.com/">Qi Tian</a>, 
+          <a href="https://xwcv.github.io/">Xinggang Wang</a>
+          <br>
+          arxiv, 2023
+          <br>
+          [<a href="https://arxiv.org/abs/2310.08528">Paper</a>] 
+          [<a href="https://guanjunwu.github.io/4dgs">Page</a>]
+          [<a href="https://github.com/hustvl/4DGaussians">Code</a>]
+  
+          <p style="font-size: 14px;">We introduce the 4D Gaussian Splatting (4D-GS) to achieve real-time dynamic scene rendering while also enjoying high training and storage efficiency. Our 4D-GS method achieves real-time rendering under high resolutions, 70 FPS at a 800*800 resolution on an RTX 3090 GPU, while maintaining comparable or higher quality than previous state-of-the-art methods.</p>
+        </td>
+      </tr>
+
+
+    <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">  
+        <td width="25%">
+          <div class="one">
+          <!-- <div class="two" id = 'openscene_shape'>
+          <video  width="160" height="100" muted autoplay loop>
+              <source src="media/openscene_teaser.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video></div> -->
+          <img src='media/gaussiandreamer.gif' width="180" height="180"></div>
+          <script type="text/javascript">
+          function openscene_start() { 
+          document.getElementById('openscene_shape').style.opacity = "1";
+          }
+          function openscene_stop() { 
+          document.getElementById('openscene_shape').style.opacity = "0"; 
+          }
+          openscene_stop()
+          </script>
+        </td>
+        <td valign="top" width="75%">
+          <papertitle>
+            GaussianDreamer: Fast Generation from Text to 3D Gaussian Splatting with Point Cloud Priors
+          </papertitle>
+          <br>
+          <a href="https://taoranyi.com/">Taoran Yi*</a>, 
+          <a href="https://jaminfong.cn/">Jiemin Fang</a>, 
+          <strong>Guanjun Wu</strong>,
+          <a href="http://lingxixie.com/">Lingxi Xie</a>, 
+          <a href="https://scholar.google.com/citations?user=Ud6aBAcAAAAJ&hl=zh-CN">Xiaopeng Zhang</a>, 
+          <a href="http://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,  
+          <a href="https://www.qitian1987.com/">Qi Tian</a>, 
+          <a href="https://xwcv.github.io/">Xinggang Wang</a>
+          <br>
+          arxiv, 2023
+          <br>
+          [<a href="https://arxiv.org/abs/2310.08529">Paper</a>] 
+          [<a href="https://taoranyi.com/gaussiandreamer/">Page</a>]
+          [<a href="https://github.com/hustvl/GaussianDreamer">Code</a>]
+  
+          <p style="font-size: 14px;">A fast 3D generation framework, named as GaussianDreamer, is proposed, where the 3D diffusion model provides point cloud priors for initialization and the 2D diffusion model enriches the geometry and appearance. Our GaussianDreamer can generate a high-quality 3D instance within 25 minutes on one GPU, much faster than previous methods, while the generated instances can be directly rendered in real time.
+
+          </p>
+        </td>
+      </tr>
+      <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">  
+        <td width="25%">
+          <div class="one">
+          <!-- <div class="two" id = 'openscene_shape'>
+          <video  width="160" height="100" muted autoplay loop>
+              <source src="media/openscene_teaser.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video></div> -->
+          <img src='media/hdrhexplane.gif' width="180" height="180"></div>
+          <script type="text/javascript">
+          function openscene_start() { 
+          document.getElementById('openscene_shape').style.opacity = "1";
+          }
+          function openscene_stop() { 
+          document.getElementById('openscene_shape').style.opacity = "0"; 
+          }
+          openscene_stop()
+          </script>
+        </td>
+        <td valign="top" width="75%">
+          <papertitle>
+           Fast High Dynamic Range Radiance Fields for Dynamic Scenes
+          </papertitle>
+          <br>
+
+          <strong>Guanjun Wu*</strong>,
+          <a href="https://taoranyi.com/">Taoran Yi*</a>, 
+          <a href="https://jaminfong.cn/">Jiemin Fang</a>, 
+          <a href="http://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,  
+          <a href="https://xwcv.github.io/">Xinggang Wang</a>
+          <br>
+          3DV, 2024
+          <br>
+          <!-- [<a href="https://arxiv.org/abs/2310.08529">Paper</a>]  -->
+          <!-- [<a href="https://taoranyi.com/gaussiandreamer/">Page</a>] -->
+          <!-- [<a href="https://github.com/hustvl/GaussianDreamer">Code</a>] -->
+  
+          <p style="font-size: 14px;">we propose a dynamic HDR NeRF framework, named as HDR-HexPlane, which can learn 3D scenes from dynamic 2D images captured with various exposures.With the proposed model, high-quality novel-view images at any time point can be rendered with any desired exposure. We further construct a dataset containing multiple dynamic scenes captured with diverse exposures for evaluation. 
+          </p>
+        </td>
+      </tr>
+
+  <!-- Footer -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+      <td>
+        <heading>Internships</heading>
+          <ul>
+            <li><strong>11/2022 - 3/2023</strong>  SenseTime, ShangHai </li>
+
+            <li><strong>3/2022 - 10/2022</strong>  ByteDance, ShangHai </li>
+          </ul>
+      </td>
+    </tr>
+  <tr>
+    <td>
+    <br>
+    <p align="right">
+      <font size="2">
+      Template is adapted from <a href="https://jonbarron.info/"><font size="2">Here</font></a>
+      <br>
+      Last updated: Oct 2023
+    </font>
+    </p>
+    </td>
+  </tr>
+  </table>
+
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+  </script> <script type="text/javascript">
+  try {
+      var pageTracker = _gat._getTracker("UA-116734954-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
+  </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116734954-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+    gtag('config', 'UA-116734954-1');
+  </script>
 
-        gtag('js', new Date());
-
-        gtag('config', 'G-PYVRSFMDRL');
-    </script>
-
-    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-
-    <link rel="stylesheet" href="./static/css/bulma.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="./static/css/index.css">
-    <link rel="icon" href="./static/images/vegetable.png">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="./static/js/fontawesome.all.min.js"></script>
-    <script src="./static/js/bulma-carousel.min.js"></script>
-    <script src="./static/js/bulma-slider.min.js"></script>
-    <script src="./static/js/index.js"></script>
-</head>
-
-<body>
-
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-    </nav>
-
-
-    <section class="hero">
-        <div class="hero-body">
-            <div class="container is-max-desktop">
-                <div class="columns is-centered">
-                    <div class="column has-text-centered">
-                        <h1 class="title is-1 publication-title">Guanjun Wu(吴官骏)</h1>
-                        <div class="column interpolation-video-column">
-                            <p>
-                                guajuwu@hust.edu.cn </p>
-                        </div>
-                        <div class="is-size-5 publication-authors">
-                            <span class="author-block">
-              <a href="https://www.hust.edu.cn/">Huazhong University of Science and Technology </a></span>
-                        </div>
-
-
-                        <div class="column has-text-centered">
-                            <div class="publication-links">
-
-                                <!-- Code Link. -->
-                                <span class="link-block">
-                <a href="https://github.com/guanjunwu"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                                <span>Github Page</span>
-                                </a>
-                                </span>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-
-        <div class="container is-max-desktop">
-
-            <!-- Abstract. -->
-            <div class="columns is-centered has-text-centered">
-
-                <div class="column">
-                    <div class="columns is-centered">
-                        <div class="column content">
-                            <img src="./static/images/myphoto.png" class="interpolation-image" alt="Interpolation end reference image." />
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-four-fifths">
-                    <h2 class="title is-3">About Me</h2>
-                    <div class="content has-text-justified">
-                        <p>
-                            I am a first-year PhD. student of Huazhong University of Science and Technology, School of computer Science and Technology. I got my bachelor degree from HUST in 2023. Under the supervised of<a href="http://creativecommons.org/licenses/by-sa/4.0/"> Prof. Xinggang Wang</a> and with the guidance of <a href=https://jaminfong.cn/>Dr. Jiemin Fang</a>
-                            in the School of Electronic Information and Communications, I am enjoying my PhD career in collaboration with HuaWei during my persuit of degree. My research interests mainly focus on computer vision, with a specific focus on Neural Rendering.
-                            <p>
-                                Additionally, I have previously interned with ByteDance on the User Growth team, where my primary responsibilities involved developing GPH (Generalized Propensity Hazard) models and causal forest population models. I also contributed to the development
-                                of perception models for autonomous driving at SenseTime.
-                            </p>
-                            <p>
-                                Currently, I am dedicated to addressing challenges in Neural Radiance Fields. Please feel free to contact me via email. </p>
-
-                    </div>
-                </div>
-            </div>
-            <!--/ Abstract. -->
-
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                    <h2 class="title is-3">Recent News</h2>
-                    <p>(10/2022) I joined My Processor Xinggang Wang's Lab to start my research!</p>
-                </div>
-            </div>
-            <!--/ Paper video. -->
-            <div class="columns is-centered">
-                <div class="column is-full-width">
-                    <h2 class="title is-3">Internships</h2>
-
-                    <div class="content has-text-justified">
-                        <p>
-                            (11/2022-3/2023) Assistant Algorithm Engineer, General Perception Department of Research Institute, SenseTime
-                        </p>
-                        <p>
-                            (3/2022-10/2022) Big Data Development Engineer, User-Growth, ByteDance
-                        </p>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-
-
-
-
-    <footer class="footer">
-        <div class="container">
-
-            <div class="columns is-centered">
-                <div class="column is-8">
-                    <div class="content">
-                        <p>
-                            The code is borrowed from  <a rel="license" href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
-                            Thanks  the authors for sharing the templates.
-                        </p>
-                        <p>
-                            Updated in: 2023.10.2
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</body>
-
+  </tr></td></table></body>
 </html>
+<!--  -->
