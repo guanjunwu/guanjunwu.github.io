@@ -1,137 +1,135 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fast High Dynamic Range Radiance Fields for Dynamic Scenes</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+    <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fast High Dynamic Range Radiance Fields for Dynamic Scenes</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-    gtag('js', new Date());
+        gtag('js', new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/hust.png">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/hust.png">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="navbar-menu">
-      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-        <a class="navbar-item" href="https://guanjunwu.github.io">
-        <span class="icon">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                <a class="navbar-item" href="https://guanjunwu.github.io">
+                    <span class="icon">
             <i class="fas fa-home"></i>
         </span>
-        </a>
-  
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
             More Research
           </a>
-          <div class="navbar-dropdown">
-            
-            <a class="navbar-item" href="https://jaminfong.cn/neusample/">
+                    <div class="navbar-dropdown">
+
+                        <a class="navbar-item" href="https://jaminfong.cn/neusample/">
               NeuSample
             </a>
-            <a class="navbar-item" href="https://jaminfong.cn/tineuvox/">
+                        <a class="navbar-item" href="https://jaminfong.cn/tineuvox/">
               TiNeuVox
             </a>
-            <a class="navbar-item" href="https://taoranyi.com/gneuvox/">
+                        <a class="navbar-item" href="https://taoranyi.com/gneuvox/">
               GNeuVox
              </a>
-            <a class="navbar-item" href="https://jumpat.github.io/SA3D/">
+                        <a class="navbar-item" href="https://jumpat.github.io/SA3D/">
               Segment Anything in 3D with NeRFs
             </a>
-            <a class="navbar-item" href="https://taoranyi.com/gaussiandreamer/">
+                        <a class="navbar-item" href="https://taoranyi.com/gaussiandreamer/">
               GaussianDreamer
             </a>
-            <a class="navbar-item" href="https://guanjunwu.github.io/4dgs/">
+                        <a class="navbar-item" href="https://guanjunwu.github.io/4dgs/">
               4D-GS
             </a>
-          </div>
-        </div>
-      </div>
-  
-    </div>
-  </nav>
-
-
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Fast High Dynamic Range Radiance Fields for Dynamic Scenes</h1>
-          <div class="is-size-5 publication-authors">
-            <div class="is-size-1 publication-authors">
-              <span class="author-block"><sup></sup>3DV 2024</span>
-              <!-- <span class="author-block"><sup>2</sup>Huawei Inc.</span> -->
+                    </div>
+                </div>
             </div>
-            <span class="author-block">
+
+        </div>
+    </nav>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Fast High Dynamic Range Radiance Fields for Dynamic Scenes</h1>
+                        <div class="is-size-5 publication-authors">
+                            <div class="is-size-1 publication-authors">
+                                <span class="author-block"><sup></sup>3DV 2024</span>
+                                <!-- <span class="author-block"><sup>2</sup>Huawei Inc.</span> -->
+                            </div>
+                            <span class="author-block">
               <a href="https://guanjunwu.github.io">Guanjun Wu</a><sup>1*</sup>,</span>
-            <span class="author-block">
-              <a href="https://taoranyi.github.io">Taoran Yi</a><sup>1*</sup>,</span>
-            <span class="author-block">
-              <a href="https://jaminfong.cn">Jiemin Fang</a><sup>2</sup>,
+                            <span class="author-block">
+              <a href="https://taoranyi.github.io">Taoran Yi</a><sup>2*</sup>,</span>
+                            <span class="author-block">
+              <a href="https://jaminfong.cn">Jiemin Fang</a><sup>2+</sup>,
             </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=D7jDk7gAAAAJ&hl=zh-CN">Wenyu Liu</a><sup>1</sup>,
+                            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=D7jDk7gAAAAJ&hl=zh-CN">Wenyu Liu</a><sup>2</sup>,
             </span>
-            <span class="author-block">
-              <a href="https://xwcv.github.io/">Xinggang Wang</a><sup>1+</sup>
+                            <span class="author-block">
+              <a href="https://xwcv.github.io/">Xinggang Wang</a><sup>2+✉</sup>
             </span>
-          </div>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Huazhong University of Science and Technology</span>
-            <span class="author-block"><sup>2</sup>Huawei Inc.</span>
-            <p></p>
-            <span class="author-block"><sup>*</sup>Equal Contributions.</span>
-            <span class="author-block"><sup>+</sup>Corresponding Authors.</span>
+                        </div>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>Schoo of CS, HUST</span>
 
-          </div>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Huazhong University of Science and Technology</span>
-            <!-- <span class="author-block"><sup>2</sup>Huawei Inc.</span> -->
-          </div>
+                            <span class="author-block"><sup>2</sup>School of EIC, HUST</span>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <!-- <span class="link-block">
+                            <p></p>
+                            <span class="author-block"><sup>*</sup>Equal Contributions.</span>
+                            <span class="author-block"><sup>+</sup>Project Lead.</span>
+                            <span class="author-block"><sup>✉</sup>Corresponding Authors.</span>
+                        </div>
+
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <!-- <span class="link-block">
                 <a href="https://arxiv.org/pdf/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -140,7 +138,7 @@
                   <span>Paper</span>
                 </a>
               </span> -->
-              <!-- <span class="link-block">
+                                <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -149,8 +147,8 @@
                   <span>arXiv</span>
                 </a>
               </span> -->
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
+                                <!-- Video Link. -->
+                                <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -159,100 +157,98 @@
                   <span>Video</span>
                 </a>
               </span> -->
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/guanjunwu/4dgaussians"
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                <a href="https://github.com/hustvl/HDR-HexPlane"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                                <span>Code</span>
+                                </a>
+                                </span>
+                                <!-- Dataset Link. -->
+                                <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/19eTjvgw98_hYodCMegHHg5PjhNUgFVNO?usp=share_link"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data</span>
-                  </a>
-            </div>
+                                <span>Data</span>
+                                </a>
+                            </div>
 
-          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+    </section>
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
         <source src="./static/videos/main.mp4"
                 type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">HDR-HexPlane</span> can reconstruct dynamic scene within hours and render HDR image.
-      </h2>
-    </div>
-  </div>
-</section>
+                <h2 class="subtitle has-text-centered">
+                    <span class="dnerf">HDR-HexPlane</span> can reconstruct dynamic scene within hours and render HDR image.
+                </h2>
+            </div>
+        </div>
+    </section>
 
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+    <section class="hero is-light is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-steve">
+                        <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/deer_hdr.mp4"
                     type="video/mp4">
           </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                    </div>
+                    <div class="item item-chair-tp">
+                        <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/lego_hdr.mp4"
                     type="video/mp4">
           </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                    </div>
+                    <div class="item item-shiba">
+                        <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/tank_hdr.mp4"
                     type="video/mp4">
           </video>
+                    </div>
+
+                </div>
+            </div>
         </div>
-
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Neural Radiances Fields (NeRF) and its extensions have shown great success to represent 3D scenes and synthesis novel-view images.
-             However, most NeRF methods take in low-dynamic-range (LDR) images, which may lose details especially with nonuniform illumination. 
-             Some previous NeRF methods attempt to introduce high-dynamic-range (HDR) techniques but mainly target at static scenes. 
-             To extend HDR NeRF methods to wider applications, we propose a dynamic HDR NeRF framework, named as HDR-HexPlane, which can learn 3D scenes from dynamic 2D images captured with various exposures. 
-             A learnable exposure mapping function is constructed to obtain adaptive exposure values for each image. Based on the monotonically-increasing prior, a camera response function is designed for stable learning. 
-             With the proposed model, high-quality novel-view images at any time point can be rendered with any desired exposure. We further construct a dataset containing multiple dynamic scenes captured with diverse exposures for evaluation. 
-             All the datasets and code will be released.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Neural Radiances Fields (NeRF) and its extensions have shown great success to represent 3D scenes and synthesis novel-view images. However, most NeRF methods take in low-dynamic-range (LDR) images, which may lose details especially with nonuniform illumination.
+                            Some previous NeRF methods attempt to introduce high-dynamic-range (HDR) techniques but mainly target at static scenes. To extend HDR NeRF methods to wider applications, we propose a dynamic HDR NeRF framework, named as HDR-HexPlane,
+                            which can learn 3D scenes from dynamic 2D images captured with various exposures. A learnable exposure mapping function is constructed to obtain adaptive exposure values for each image. Based on the monotonically-increasing
+                            prior, a camera response function is designed for stable learning. With the proposed model, high-quality novel-view images at any time point can be rendered with any desired exposure. We further construct a dataset containing
+                            multiple dynamic scenes captured with diverse exposures for evaluation. All the datasets and code will be released.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
+            <!-- Paper video. -->
+            <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -261,67 +257,65 @@
         </div>
       </div>
     </div> -->
-    <img src="./static/images/pipeline.jpg"
-    class="interpolation-image"
-    alt="The framework of Our Model."/>
-    <!--/ Paper video. -->
-  </div>
-</section>
+            <img src="./static/images/pipeline.jpg" class="interpolation-image" alt="The framework of Our Model." />
+            <!--/ Paper video. -->
+        </div>
+    </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
+    <section class="section">
+        <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
+            <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Balanced HDR Images Rendering</h2>
-          <p>
-            HDR-HexPlane can render tonemapped HDR Image Given both overexposure and underexposure images.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                <!-- Visual Effects. -->
+                <div class="column">
+                    <div class="content">
+                        <h2 class="title is-3">Balanced HDR Images Rendering</h2>
+                        <p>
+                            HDR-HexPlane can render tonemapped HDR Image Given both overexposure and underexposure images.
+                        </p>
+                        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/lego_hdr.mp4"
                     type="video/mp4">
           </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-      <div class="column">
-        <h2 class="title is-3">Multi Exposure Images Rendering</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              HDR-HexPlane can render novel views with different exposures.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
+                    </div>
+                </div>
+                <!--/ Visual Effects. -->
+                <div class="column">
+                    <h2 class="title is-3">Multi Exposure Images Rendering</h2>
+                    <div class="columns is-centered">
+                        <div class="column content">
+                            <p>
+                                HDR-HexPlane can render novel views with different exposures.
+                            </p>
+                            <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/lego_mutiexp.mp4"
                       type="video/mp4">
             </video>
-          </div>
+                        </div>
 
-        </div>
-      </div>
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Scene Depth Rendering</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              With Multi-views temporal images input, HDR-HexPlane also propose precise depth estimation.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
+                    </div>
+                </div>
+                <!-- Matting. -->
+                <div class="column">
+                    <h2 class="title is-3">Scene Depth Rendering</h2>
+                    <div class="columns is-centered">
+                        <div class="column content">
+                            <p>
+                                With Multi-views temporal images input, HDR-HexPlane also propose precise depth estimation.
+                            </p>
+                            <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/lego_depth.mp4"
                       type="video/mp4">
             </video>
-          </div>
+                        </div>
 
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-    <!-- <section class="hero is-light is-small">
+                    </div>
+                </div>
+            </div>
+            <!--/ Matting. -->
+            <!-- <section class="hero is-light is-small">
       <div class="hero-body">
         <div class="container">
           <div id="results-carousel" class="carousel results-carousel">
@@ -358,26 +352,26 @@
     </section> -->
 
 
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Notes</h2>
+            <!-- Concurrent Work. -->
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Notes</h2>
 
-        <div class="content has-text-justified">
-          <p>
-            This paper haven't been camera ready yet, we will release our code and full paper soon
-          </p>
+                    <div class="content has-text-justified">
+                        <p>
+                            This paper haven't been camera ready yet, we will release our code and full paper soon
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <!--/ Concurrent Work. -->
 
         </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
-  </div>
-</section>
+    </section>
 
 
-<!-- <section class="section" id="BibTeX">
+    <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
@@ -390,37 +384,33 @@
 </section> -->
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
+                        </p>
+                        <p>
+                            This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website, we just ask that you link back to this page in the footer. Please remember to remove the analytics
+                            code included in the header of the website which you do not want on your website.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
 </body>
+
 </html>
