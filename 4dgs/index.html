@@ -144,7 +144,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2310.08528.pdf"
+                <a href="https://arxiv.org/pdf/2310.08528v2.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -191,7 +191,6 @@
                   <span>Data</span>
                   </a> -->
             </div>
-            <iframe width="1120" height="630" src="https://www.youtube.com/embed/_wRbq8KnaVg?si=MCX2CZMGOgRyjKSL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
           </div>
@@ -200,24 +199,60 @@
     </div>
   </div>
 </section>
+
+<div class="container is-max-desktop">
+  <div class="columns is-centered">
+    <!-- <p>
+      As a byproduct of our method, we can also solve the matting problem by ignoring
+      samples that fall outside of a bounding box during rendering.
+    </p> -->
+    <!-- Visual Effects. -->
+    <div class="column">
+      <div class="content">
+        <!-- <h2 class="title is-3">Visual Effects</h2> -->
+  
+        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/teaser_chicken.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="column">
+      <div class="columns is-centered">
+        <div class="column content">
+  
+          <video id="matting-video"  autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/teaser_beef.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+  
+      </div>
+    </div>
+    <div class="column">
+      <div class="columns is-centered">
+        <div class="column content">
+  
+          <video id="matting-video"  autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/teaser_cookie.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+</div>
+
 <h2 class="subtitle has-text-centered">
   <span class="dnerf">4D-GS</span> can learn a dynamic scene within 20 minutes and reach the rendering speed over 50 fps of the view on one RTX 3080 GPU.
 </h2>
 <div class="columns is-centered">
+  <iframe width="1120" height="630" src="https://www.youtube.com/embed/_wRbq8KnaVg?si=MCX2CZMGOgRyjKSL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 </div>
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
 
-      <video id="teaser" autoplay muted loop playsinline height="50%">
-        <source src="./static/videos/train_visualize.mp4"
-                type="video/mp4">
-      </video>
-
-    </div>
-  </div>
-</section>
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -225,8 +260,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Representing and rendering dynamic scenes has been an important but challenging task. Especially, to accurately model complex motions, high efficiency is usually hard to maintain. We introduce the 4D Gaussian Splatting (4D-GS) to achieve real-time dynamic scene rendering while also enjoying high training and storage efficiency. An efficient deformation field is constructed to model both Gaussian motions and shape deformations. Different adjacent Gaussians are connected via a HexPlane to produce more accurate position and shape deformations. Our 4D-GS method achieves real-time rendering under high resolutions, 70 FPS at a 800*800 resolution on an RTX 3090 GPU, while maintaining comparable or higher quality than previous state-of-the-art methods.          </p>
-
+            Representing and rendering dynamic scenes has been an important but challenging task. Especially, to accurately model complex motions, high efficiency is usually hard to guarantee. To achieve real-time dynamic scene rendering while also enjoying high training and storage efficiency, we propose 4D Gaussian Splatting (4D-GS) as a holistic representation for dynamic scenes rather than applying 3D-GS for each individual frame. In 4D-GS, a novel explicit representation containing both 3D Gaussians and 4D neural voxels is proposed. A decomposed neural voxel encoding algorithm inspired by HexPlane is proposed to efficiently build Gaussian features from 4D neural voxels and then a lightweight MLP is applied to predict Gaussian deformations at novel timestamps.
+            Our 4D-GS method achieves real-time rendering under high resolutions, 82 FPS at an 800 X 800 resolution on an RTX 3090 GPU while maintaining comparable or better quality than previous state-of-the-art methods. 
         </div>
       </div>
 
@@ -413,7 +448,20 @@
         </div>
       </div>
     </div>
+    <section class="hero teaser">
+      <h2 class="title is-3">Real-Time Viewer</h2>
 
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+    
+          <video id="teaser" autoplay muted loop playsinline height="50%">
+            <source src="./static/videos/train_visualize.mp4"
+                    type="video/mp4">
+          </video>
+    
+        </div>
+      </div>
+    </section>
     <h2 class="title is-3">Fixed-View Rendering</h2>
 
     <div class="columns is-centered">
