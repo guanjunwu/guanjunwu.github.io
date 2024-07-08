@@ -28,4 +28,4 @@ def convert_mp4_to_gif(input_file_path, output_file_path, start_time=0, end_time
     clip.write_gif(output_file_path)
 
 # Example usage
-convert_mp4_to_gif("media/lego_mutiexp.mp4", "media/lego_mutiexp.gif", start_time=0, end_time=None, resize=200)
+convert_mp4_to_gif("media/sa4d.mp4", "media/sa4d.gif", start_time=0, end_time=None, resize=200)
