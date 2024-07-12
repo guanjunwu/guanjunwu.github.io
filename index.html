@@ -174,10 +174,11 @@
                         </td>
                     </tr>
 
+
                     <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">
                         <td width="25%">
                             <div class="one">
-                                <img src='media/sa4d.gif' width="180" height="120"></div>
+                                <img src='media/gaussiandreamerpro.gif' width="180" height="120"></div>
                             <script type="text/javascript">
                                 function openscene_start() {
                                     document.getElementById('openscene_shape').style.opacity = "1";
@@ -191,30 +192,32 @@
                         </td>
                         <td valign="top" width="75%">
                             <papertitle>
-                                Segment Any 4D Gaussians
-                            </papertitle>
+                                GaussianDreamerPro: Text to Manipulable 3D Gaussians with Highly Enhanced Quality
+                                                        </papertitle>
                             <br>
-                            <a href="https://jsxzs.github.io/">Shengxiang Ji*</a>,
-                            <strong>Guanjun Wu*</strong>,
+                            <a href="https://taoranyi.com/">Taoran Yi</a>,
 
                             <a href="https://jaminfong.cn/">Jiemin Fang</a>,
-                            <a href="https://github.com/Jumpat">Jiazhong Cen</a>,
-                            <a href="https://taoranyi.com/">Taoran Yi</a>,
+                            <a href="https://github.com/Zanue">Zanwei Zhou</a>,
+                            <a href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=9Nw_mKAAAAAJ">Junjie Wang</a>,
+
+                            <strong>Guanjun Wu</strong>,
+
+                            <a href="http://lingxixie.com/">Lingxi Xie</a>,
+                            <a href="https://scholar.google.com/citations?user=Ud6aBAcAAAAJ&hl=zh-CN">Xiaopeng Zhang</a>,
                             <a href="http://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
                             <a href="https://xwcv.github.io/">Xinggang Wang</a>,
                             <a href="https://www.qitian1987.com/">Qi Tian</a>
                             <br> ArXiv, 2024
                             <br> [
-                            <a href="https://arxiv.org/abs/2407.04504">Paper</a>] [
-                            <a href="https://jsxzs.github.io/sa4d/">Page</a>] [
-                            <a href="https://github.com/hustvl/SA4D">Code</a>]
+                            <a href="https://arxiv.org/abs/2406.18462">Paper</a>] [
+                            <a href="https://taoranyi.com/gaussiandreamerpro/">Page</a>] [
+                            <a href="https://github.com/hustvl/GaussianDreamerPro">Code</a>]
 
-                            <p style="font-size: 14px;">Modeling, understanding, and reconstructing the real world are crucial in XR/VR. Recently, 3D Gaussian Splatting (3D-GS) methods have shown remarkable success in modeling and understanding 3D scenes. Similarly, various 4D representations have demonstrated the ability to capture the dynamics of the 4D world. However, there is a dearth of research focusing on segmentation within 4D representations. In this paper, we propose to Segment Any 4D Gaussians (SA4D), the first framework to segment anything in the 4D digital world based on 4D Gaussians. In SA4D, an efficient temporal identity feature field is introduced to handle Gaussian drifting, with the potential to learn precise identity feature from noisy and sparse input. Additionally, a 4D segmentation refinement process is proposed to remove artifacts. Our SA4D achieves precise, high-quality segmentation within seconds in 4D Gaussians and shows the ability of removal, recoloring, composition and rendering high quality novel anything masks.
-
+                            <p style="font-size: 14px;">Aiming at highly enhancing the generation quality, we propose a novel framework named GaussianDreamerPro. The main idea is to bind Gaussians to reasonable geometry, which evolves over the whole generation process. Along different stages of our framework, both the geometry and appearance can be enriched progressively. The final output asset is constructed with 3D Gaussians bound to mesh, which shows significantly enhanced details and quality compared with previous methods. Notably, the generated asset can also be seamlessly integrated into downstream manipulation pipelines, e.g. animation, composition, and simulation etc., greatly promoting its potential in wide applications.
                             </p>
                         </td>
                     </tr>
-
 
                     <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">
                         <td width="25%">
