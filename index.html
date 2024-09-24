@@ -122,7 +122,7 @@
                                 <name>Guanjun Wu (吴官骏)</name>
                             </p>
                             <p>
-                                I am a first-year Ph.D. student of <a href="https://www.hust.edu.cn/">Huazhong University of Science and Technology</a>, <a href="http://www.cs.hust.edu.cn/"> School of CS</a>. I got my bachelor degree from HUST in 2023.
+                                I am a second-year Ph.D. student of <a href="https://www.hust.edu.cn/">Huazhong University of Science and Technology</a>, <a href="http://www.cs.hust.edu.cn/"> School of CS</a>. I got my bachelor degree from HUST in 2023.
                                 Under the supervised of<a href="http://creativecommons.org/licenses/by-sa/4.0/"> Prof. Xinggang Wang</a>, <a href="http://creativecommons.org/licenses/by-sa/4.0/">Prof. Wenyu Liu</a> and with the guidance of <a href=https://jaminfong.cn/>Dr.
                                 Jiemin Fang</a>
                                 in the <a href="https://ei.hust.edu.cn/">School of EIC</a>, I am enjoying my Ph.D. career in collaboration with Huawei. My research interests mainly focus on 3D Vision/ Neural Rendering.
@@ -155,7 +155,7 @@
                             <heading>News</heading>
                             <ul>
                                 <li><strong>02/2024 </strong><a href="https://guanjunwu.github.io/4dgs/">  4D-GS</a>, <a href="https://taoranyi.com/gaussiandreamer/"> GaussianDreamer</a> are accpeted to CVPR 2024! </li>
-                                <li><strong>10/2023</strong><a href="https://guanjunwu.github.io/HDR-HexPlane/"> Fast High Dynamic Range Radiance Field for Dynamic Scenes </a> is accpeted to 3DV 2024! </li>
+                                <li><strong>10/2023</strong><a href="https://guanjunwu.github.io/HDR-HexPlane/"> HDR-HexPlane </a> is accpeted to 3DV 2024! </li>
                             </ul>
                         </td>
                     </tr>
@@ -167,14 +167,53 @@
                         <td colspan="2">
                             <heading>Research</heading>
                             <p>
-                                My research interests are efficient neural rendering technology, including: 4D novel view rendering/understanding, 3D Generation etc.
+                                My research interests are efficient neural rendering technology, including: 4D Reconstruction, 3D Generation etc.
                             </p>
                             <p></p>
                             * Equal contribution.
                         </td>
                     </tr>
 
+                    <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">
+                        <td width="25%">
+                            <div class="one">
+                                <img src='media/d2dgs.gif' width="180" height="180"></div>
+                            <script type="text/javascript">
+                                function openscene_start() {
+                                    document.getElementById('openscene_shape').style.opacity = "1";
+                                }
 
+                                function openscene_stop() {
+                                    document.getElementById('openscene_shape').style.opacity = "0";
+                                }
+                                openscene_stop()
+                            </script>
+                        </td>
+
+                        <td valign="top" width="75%">
+                            <papertitle>
+                                Dynamic 2D Gaussians: Geometrically accurate radiance fields for dynamic objects
+                            </papertitle>
+                            <br>
+                            <a href="https://scholar.google.com/citations?hl=en&user=jEjHhDUAAAAJ">Shuai Zhang*</a>,
+    
+                            <strong>Guanjun Wu*</strong>,
+                            <a href="https://scholar.google.com/citations?user=nRc8u6gAAAAJ&hl=en&oi=ao">Bin Feng</a>,
+
+                            <a href="http://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+                            <a href="https://xwcv.github.io/">Xinggang Wang</a>
+                            <br> ArXiv, 2024
+                            <br> [
+                            <a href="https://arxiv.org/abs/2409.14072">Paper</a>] [
+                            <!-- <a href="https://taoranyi.com/gaussiandreamerpro/">Page</a>] [ -->
+                            <a href="https://github.com/hustvl/Dynamic-2DGS">Code</a>]
+    
+                            <p style="font-size: 14px;">
+                                we propose a novel representation that can reconstruct accurate meshes from sparse image input, named Dynamic 2D Gaussians (D-2DGS).
+                                We adopt 2D Gaussians for basic geometry representation and use sparse-controlled points to capture 2D Gaussian's deformation. By extracting the object mask from the rendered high-quality image and masking the rendered depth map, a high-quality dynamic mesh sequence of the object can be extracted.
+                            </p>
+                        </td>
+                    </tr>
                     <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">
                         <td width="25%">
                             <div class="one">
@@ -190,6 +229,7 @@
                                 openscene_stop()
                             </script>
                         </td>
+
                         <td valign="top" width="75%">
                             <papertitle>
                                 GaussianDreamerPro: Text to Manipulable 3D Gaussians with Highly Enhanced Quality
@@ -364,8 +404,10 @@
                                     <strong>Conference Reviewers</strong>  
                                     <li>ACM SIGGRAPH Asia 2024</li>
                                     <li>Neural Information Processing Systems (NeurIPS) 2024</li>
-                                    <strong>Journal Reviewer</strong>
+                                    <li>International Conference on Learning Representations (ICLR) 2024</li>
+                                    <strong>Journal Reviewers</strong>
                                     <li>International Journal of Computer Vision (IJCV) </li>
+                                    <li>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT) </li>
 
                                 </ul>
                             </td>
