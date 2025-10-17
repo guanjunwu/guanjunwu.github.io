@@ -167,7 +167,7 @@
                 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                     <tr>
                         <td colspan="2">
-                            <heading>Research</heading>
+                            <heading>Selected Research</heading>
                             <p>
                                 My research interests are efficient neural rendering technology, including: 4D Reconstruction, 3D Generation etc.
                             </p>
@@ -176,6 +176,145 @@
                         </td>
                     </tr>
 
+
+                    <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">
+                        <td width="25%">
+                            <div class="one">
+                                <img src='media/UniLat3D.gif' width="180" height="100"></div>
+                            <script type="text/javascript">
+                                function openscene_start() {
+                                    document.getElementById('openscene_shape').style.opacity = "1";
+                                }
+
+                                function openscene_stop() {
+                                    document.getElementById('openscene_shape').style.opacity = "0";
+                                }
+                                openscene_stop()
+                            </script>
+                        </td>
+
+                        <td valign="top" width="75%">
+                            <papertitle>
+                                UniLat3D: Geometry-Appearance Unified Latents for Single-Stage 3D Generation
+                            </papertitle>
+                            <br>
+
+                            <strong>Guanjun Wu*</strong>,
+                            <a href="https://jaminfong.cn">Jiemin Fang*</a>,
+                            <a href="https://github.com/chensjtu">Chen Yang*</a>,
+                            <a href="https://scholar.google.com/citations?user=2dCJlg4AAAAJ&hl=zh-CN">Sikuang Li</a>,
+                            <a href="https://taoranyi.com/">Taoran Yi</a>,
+                            <span>Jia Lu</span>,
+                            <a href="https://github.com/Zanue">Zanwei Zhou</a>,
+                            <a href="https://github.com/Jumpat">Jiazhong Cen</a>,
+                            <a href="http://lingxixie.com/">Lingxi Xie</a>,
+                            <a href="https://scholar.google.com/citations?user=Ud6aBAcAAAAJ&hl=zh-CN">Xiaopeng Zhang</a>,
+                            <a href="https://www.eric-weiwei.com/">Wei Wei</a>,
+                            <a href="http://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+                            <a href="https://xwcv.github.io/">Xinggang Wang</a>,
+                            <a href="https://www.qitian1987.com/">Qi Tian</a>,
+
+                            <br> Arxiv, 2025
+                            <br> [
+                            <a href="https://arxiv.org/abs/2509.25079">Paper</a>] [
+                            <a href="https://unilat3d.github.io/">Page</a>] [
+                            <a href="https://github.com/UniLat3D/UniLat3D">Code</a>]
+
+                            <p style="font-size: 14px;">
+                                We propose UniLat3D, a novel one-stage 3D generation framework, which unifies geometry and appearance in a compact latent representation, achieving superior performance than common two-stage 3D generation models.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">
+                        <td width="25%">
+                            <div class="one">
+
+                                <img src='media/4dgs.gif' width="180" height="120"></div>
+                            <script type="text/javascript">
+                                function openscene_start() {
+                                    document.getElementById('openscene_shape').style.opacity = "1";
+                                }
+
+                                function openscene_stop() {
+                                    document.getElementById('openscene_shape').style.opacity = "0";
+                                }
+                                openscene_stop()
+                            </script>
+                        </td>
+                        <td valign="top" width="75%">
+                            <papertitle>
+                                4D Gaussian Splatting for Real-Time Dynamic Scene Rendering
+                            </papertitle>
+                            <br>
+                            <strong>Guanjun Wu*</strong>,
+                            <a href="https://taoranyi.com/">Taoran Yi*</a>,
+
+                            <a href="https://jaminfong.cn/">Jiemin Fang</a>,
+
+                            <a href="http://lingxixie.com/">Lingxi Xie</a>,
+                            <a href="https://scholar.google.com/citations?user=Ud6aBAcAAAAJ&hl=zh-CN">Xiaopeng Zhang</a>,
+                            <a href="https://www.eric-weiwei.com/">Wei Wei</a>,
+                            <a href="http://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+                            <a href="https://www.qitian1987.com/">Qi Tian</a>,
+                            <a href="https://xwcv.github.io/">Xinggang Wang</a>
+                            <br> CVPR, 2024
+                            <br> [
+                            <a href="https://arxiv.org/abs/2310.08528">Paper</a>] [
+                            <a href="https://guanjunwu.github.io/4dgs">Page</a>] [
+                            <a href="https://github.com/hustvl/4DGaussians">Code</a>]
+                            <p><strong>Ranked Top5 in CVPR paper influence, 3000+ GitHub stars.</strong></p>
+
+                            <p style="font-size: 14px;">In 4D-GS, a novel explicit representation containing both 3D Gaussians and 4D neural voxels is proposed. A decomposed neural voxel encoding algorithm inspired by HexPlane is proposed to efficiently build Gaussian features from
+                                4D neural voxels and then a lightweight MLP is applied to predict Gaussian deformations at novel timestamps. Our 4D-GS method achieves real-time rendering under high resolutions, 82 FPS at an 800 X 800 resolution on an
+                                RTX 3090 GPU while maintaining comparable or better quality than previous state-of-the-art methods.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">
+                        <td width="25%">
+                            <div class="one">
+                                <!-- <div class="two" id = 'openscene_shape'>
+          <video  width="160" height="100" muted autoplay loop>
+              <source src="media/openscene_teaser.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video></div> -->
+                                <img src='media/hdrhexplane.gif' width="180" height="180"></div>
+                            <script type="text/javascript">
+                                function openscene_start() {
+                                    document.getElementById('openscene_shape').style.opacity = "1";
+                                }
+
+                                function openscene_stop() {
+                                    document.getElementById('openscene_shape').style.opacity = "0";
+                                }
+                                openscene_stop()
+                            </script>
+                        </td>
+                        <td valign="top" width="75%">
+                            <papertitle>
+                                Fast High Dynamic Range Radiance Fields for Dynamic Scenes
+                            </papertitle>
+                            <br>
+
+                            <strong>Guanjun Wu*</strong>,
+                            <a href="https://taoranyi.com/">Taoran Yi*</a>,
+                            <a href="https://jaminfong.cn/">Jiemin Fang</a>,
+                            <a href="http://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+                            <a href="https://xwcv.github.io/">Xinggang Wang</a>
+                            <br> 3DV, 2024
+                            <br> [
+                            <a href="https://arxiv.org/abs/2401.06052">Paper</a>] [
+                            <a href="https://guanjunwu.github.io/HDR-HexPlane">Page</a>] [
+                            <a href="https://github.com/hustvl/HDR-HexPlane">Code</a>] [
+                            <a href="https://drive.google.com/drive/folders/19eTjvgw98_hYodCMegHHg5PjhNUgFVNO">Data</a>]
+
+                            <p style="font-size: 14px;">we propose a dynamic HDR NeRF framework, named as HDR-HexPlane, which can learn 3D scenes from dynamic 2D images captured with various exposures.With the proposed model, high-quality novel-view images at any time point can
+                                be rendered with any desired exposure. We further construct a dataset containing multiple dynamic scenes captured with diverse exposures for evaluation.
+                            </p>
+                        </td>
+                    </tr>
                     <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">
                         <td width="25%">
                             <div class="one">
@@ -208,7 +347,7 @@
                             <a href="https://scholar.google.com/citations?user=nRc8u6gAAAAJ&hl=en&oi=ao">Bin Feng</a>,
 
                             <a href="http://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>
-                            <br> ACMMM, 2025
+                            <br> ACMMM, 2025 (Oral)
                             <br> [
                             <a href="https://arxiv.org/abs/2409.14072">Paper</a>] [
                             <a href="https://github.com/hustvl/Dynamic-2DGS">Code</a>]
@@ -219,6 +358,13 @@
                             </p>
                         </td>
                     </tr>
+                    <tr>
+                        <td colspan="2">
+                            <heading>Other Research</heading>
+                        </td>
+                    </tr>
+
+
                     <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">
                         <td width="25%">
                             <div class="one">
@@ -266,11 +412,11 @@
                         </td>
                     </tr>
 
+
                     <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">
                         <td width="25%">
                             <div class="one">
-
-                                <img src='media/4dgs.gif' width="180" height="120"></div>
+                                <img src='media/TOGS.gif' width="180" height="120"></div>
                             <script type="text/javascript">
                                 function openscene_start() {
                                     document.getElementById('openscene_shape').style.opacity = "1";
@@ -282,37 +428,36 @@
                                 openscene_stop()
                             </script>
                         </td>
+
                         <td valign="top" width="75%">
                             <papertitle>
-                                4D Gaussian Splatting for Real-Time Dynamic Scene Rendering
+                                TOGS: Gaussian Splatting with Temporal Opacity Offset for Real-Time 4D DSA Rendering
                             </papertitle>
                             <br>
-                            <strong>Guanjun Wu*</strong>,
-                            <a href="https://taoranyi.com/">Taoran Yi*</a>,
+                            <a href="https://github.com/Shuaizhang7">Shuai Zhang</a>,
+                            <a href="https://scholar.google.com.hk/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Huangxuan Zhao</a>,
+                            <a href="https://github.com/zhouzhenghong-gt/">Zhenghong Zhou</a>,
 
-                            <a href="https://jaminfong.cn/">Jiemin Fang</a>,
 
-                            <a href="http://lingxixie.com/">Lingxi Xie</a>,
-                            <a href="https://scholar.google.com/citations?user=Ud6aBAcAAAAJ&hl=zh-CN">Xiaopeng Zhang</a>,
-                            <a href="https://www.eric-weiwei.com/">Wei Wei</a>,
+                            <strong>Guanjun Wu</strong>,
+
+                            <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=abn37yYAAAAJ&view_op=list_works&sortby=pubdate">Chuansheng Zheng</a>,
+
                             <a href="http://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
-                            <a href="https://www.qitian1987.com/">Qi Tian</a>,
-                            <a href="https://xwcv.github.io/">Xinggang Wang</a>
-                            <br> CVPR, 2024
+                            <a href="https://xwcv.github.io/">Xinggang Wang</a>,
+                            <br> IEEE JBHI
                             <br> [
-                            <a href="https://arxiv.org/abs/2310.08528">Paper</a>] [
-                            <a href="https://guanjunwu.github.io/4dgs">Page</a>] [
-                            <a href="https://github.com/hustvl/4DGaussians">Code</a>]
-                            <p><strong>Ranked 2nd in CVPR paper influence, 2000+ GitHub stars.</strong></p>
+                            <a href="https://arxiv.org/abs/2403.19586">Paper</a>] [
+                            <a href="https://github.com/hustvl/TOGS">Code</a>]
 
-                            <p style="font-size: 14px;">In 4D-GS, a novel explicit representation containing both 3D Gaussians and 4D neural voxels is proposed. A decomposed neural voxel encoding algorithm inspired by HexPlane is proposed to efficiently build Gaussian features from
-                                4D neural voxels and then a lightweight MLP is applied to predict Gaussian deformations at novel timestamps. Our 4D-GS method achieves real-time rendering under high resolutions, 82 FPS at an 800 X 800 resolution on an
-                                RTX 3090 GPU while maintaining comparable or better quality than previous state-of-the-art methods.
+                            <p style="font-size: 14px;">We propose TOGS, a Gaussian splatting method with opacity offset over time, which can effectively improve the rendering quality and speed of 4D DSA. We introduce an opacity offset table for each Gaussian to model the temporal
+                                variations in the radiance of the contrast agent. Additionally, we introduced a Smooth loss term in the loss function to mitigate overfitting issues that may arise in the model when dealing with sparse view scenarios. This
+                                model achieves stateof-the-art reconstruction quality under the same number of training views. Additionally, it enables real-time rendering while maintaining low storage overhead.
+
 
                             </p>
                         </td>
                     </tr>
-
 
                     <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">
                         <td width="25%">
@@ -361,49 +506,7 @@
                             </p>
                         </td>
                     </tr>
-                    <tr onmouseout="openscene_stop()" onmouseover="openscene_start()">
-                        <td width="25%">
-                            <div class="one">
-                                <!-- <div class="two" id = 'openscene_shape'>
-          <video  width="160" height="100" muted autoplay loop>
-              <source src="media/openscene_teaser.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-              </video></div> -->
-                                <img src='media/hdrhexplane.gif' width="180" height="180"></div>
-                            <script type="text/javascript">
-                                function openscene_start() {
-                                    document.getElementById('openscene_shape').style.opacity = "1";
-                                }
 
-                                function openscene_stop() {
-                                    document.getElementById('openscene_shape').style.opacity = "0";
-                                }
-                                openscene_stop()
-                            </script>
-                        </td>
-                        <td valign="top" width="75%">
-                            <papertitle>
-                                Fast High Dynamic Range Radiance Fields for Dynamic Scenes
-                            </papertitle>
-                            <br>
-
-                            <strong>Guanjun Wu*</strong>,
-                            <a href="https://taoranyi.com/">Taoran Yi*</a>,
-                            <a href="https://jaminfong.cn/">Jiemin Fang</a>,
-                            <a href="http://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
-                            <a href="https://xwcv.github.io/">Xinggang Wang</a>
-                            <br> 3DV, 2024
-                            <br> [
-                            <a href="https://arxiv.org/abs/2401.06052">Paper</a>] [
-                            <a href="https://guanjunwu.github.io/HDR-HexPlane">Page</a>] [
-                            <a href="https://github.com/hustvl/HDR-HexPlane">Code</a>] [
-                            <a href="https://drive.google.com/drive/folders/19eTjvgw98_hYodCMegHHg5PjhNUgFVNO">Data</a>]
-
-                            <p style="font-size: 14px;">we propose a dynamic HDR NeRF framework, named as HDR-HexPlane, which can learn 3D scenes from dynamic 2D images captured with various exposures.With the proposed model, high-quality novel-view images at any time point can
-                                be rendered with any desired exposure. We further construct a dataset containing multiple dynamic scenes captured with diverse exposures for evaluation.
-                            </p>
-                        </td>
-                    </tr>
                     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
                         <tr>
                             <td>
